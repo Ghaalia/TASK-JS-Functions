@@ -13,8 +13,7 @@ function greet(name)
 }
 
 
-
-/**
+/***********************************************
  * isOdd(n):
  * - receives a number n
  * - returns true if it's odd, false otherwise
@@ -34,7 +33,7 @@ function isOdd(n) {
 }
 
 
-/**
+/***********************************************
  * oddsSmallerThan(n):
  * - receives a number n
  * - returns the number of ODD numbers smaller than n
@@ -45,7 +44,7 @@ function isOdd(n) {
  */
 
 
-/*
+// using loop
 function oddsSmallerThan(n) 
 {
   // Your code here
@@ -58,8 +57,10 @@ function oddsSmallerThan(n)
   }
 
   return c;
-} */
+} 
 
+// Another way (using equations)
+/*
 function oddsSmallerThan(n) 
 {
   // Your code here
@@ -72,9 +73,27 @@ function oddsSmallerThan(n)
     return ((n-1)/2);
   }
 }
+*/
+
+// Another way (using equations & call function isOdd(n) )
+/*
+function oddsSmallerThan(n) 
+{
+  // Your code here
+  if (isOdd(n))
+  {
+    return ((n-1)/2);
+
+  } else 
+  {
+    return n/2;
+  }
+}
+*/
 
 
-/**
+
+/***********************************************
  * squareOrDouble(n):
  * - receives a number n
  * - returns its square if it's odd
@@ -85,7 +104,9 @@ function oddsSmallerThan(n)
  * squareOrDouble(9) -> 81
  */
 
-function squareOrDouble(n) {
+
+function squareOrDouble(n)
+ {
   // Your code here
   if (n%2 == 0)
   {
@@ -93,6 +114,20 @@ function squareOrDouble(n) {
   } 
   else return n*n;
 }
+
+// Another way (call funtion inside another one) 
+/*
+function squareOrDouble(n)
+ {
+  // Your code here
+  if (isOdd(n))
+  {
+    return n*n;
+  } 
+  else return n*2;
+}
+*/
+
 
 greet("Ghaalia");
 console.log(isOdd(24));
