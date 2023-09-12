@@ -6,9 +6,13 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
-function greet(name) {
+function greet(name) 
+{
   // Your code here
+  console.log(`Hello ${name}`)
 }
+
+
 
 /**
  * isOdd(n):
@@ -21,7 +25,13 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n%2 == 0)
+  {
+    return false;
+  } 
+  else return true;
 }
+
 
 /**
  * oddsSmallerThan(n):
@@ -34,7 +44,19 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  let c = 0;
+
+  for(i = 0; i < n; i++)
+  {
+    if (i%2 == 0);
+    else c += 1;
+
+
+  }
+
+  return c;
 }
+
 
 /**
  * squareOrDouble(n):
@@ -48,4 +70,15 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n%2 == 0)
+  {
+    return n*2;
+  } 
+  else return n*n;
 }
+
+greet("Ghaalia");
+console.log(isOdd(24));
+console.log(oddsSmallerThan(15));
+console.log(squareOrDouble(3));
+console.log(squareOrDouble(5));
