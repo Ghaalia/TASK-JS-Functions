@@ -74,7 +74,6 @@ function oddsSmallerThan(n)
 }
 
 
-
 /**
  * squareOrDouble(n):
  * - receives a number n
